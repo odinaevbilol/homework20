@@ -7,21 +7,67 @@
     <link rel="stylesheet" href="./output.css">
 </head>
 <body>
-    <div class="flex justify-between items-center p-4">
-        <div><img src="./IMAGE (22).png" alt=""></div>
+   <header class="p-4 lg:px-8">
+  <div class="flex items-center justify-between">
 
-        <div class="flex gap-4">
-            <p>Home</p>
-            <p>About Us</p>
-            <p>Shop</p>
-            <p>Pages</p>
-            <p>Contact Us</p>
-        </div>
+    <img src="./IMAGE (22).png" alt="Logo" class="h-10">
 
+   
+    <nav class="hidden lg:flex gap-6 text-gray-600">
+      <a href="#" class="hover:text-black">Home</a>
+      <a href="#" class="hover:text-black">About Us</a>
+      <a href="#" class="hover:text-black">Shop</a>
+      <a href="#" class="hover:text-black">Pages</a>
+      <a href="#" class="hover:text-black">Contact Us</a>
+    </nav>
 
-        <div>
-            <img src="./Frame (12).png" alt="">
-        </div>
+    <div class="flex items-center gap-4">
+
+     
+      <img src="./Frame (12).png" alt="Cart" class="hidden lg:block">
+
+      
+      <button class="lg:hidden">
+        <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+            d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+      </button>
+
     </div>
+
+  </div>
+</header>
+
+
+
+<section
+  class="min-h-[80vh] lg:min-h-screen bg-no-repeat bg-cover bg-center flex items-center"
+  style="background-image: url('./IMAGE\ \(23\).png');"
+>
+  <div class="px-4 lg:px-20 w-full">
+
+    <div class="max-w-xl text-center lg:text-left">
+
+      <p class="text-green-600 italic mb-4">
+        Made With Nature
+      </p>
+
+      <h1 class="text-3xl sm:text-4xl lg:text-6xl font-bold text-gray-800 leading-tight mb-6">
+        Welcome to the world of nature and organic.
+      </h1>
+
+      <button
+        class="inline-flex items-center gap-3 bg-yellow-300 px-6 py-3 rounded-full font-medium hover:bg-yellow-400 transition">
+        Explore Now
+        <span class="bg-green-800 text-white w-8 h-8 flex items-center justify-center rounded-full">
+          →
+        </span>
+      </button>
+
+    </div>
+
+  </div>
+</section>
 </body>
 </html>
